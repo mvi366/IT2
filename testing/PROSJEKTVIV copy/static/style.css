@@ -1,0 +1,264 @@
+body{
+    font-family: 'Jost', sans-serif;
+    margin: 0%;
+    background-color: #ffffff;
+}
+
+h3{
+    font-size: 15px;
+}
+
+p{
+  
+    font-size: 16px;
+    font-weight: 300;
+}
+.time{
+    font-family: 'Times New Roman', Times, serif;
+}
+img{
+    width: 100%;
+}
+button:hover{
+    cursor: pointer;
+    font-weight: bolder;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a img:hover{
+    filter: brightness(90%);
+}
+
+
+.bildeli{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+}
+.bildeli div{
+    padding: 50px;
+}
+
+#inside {
+    font-size: 20px;
+    margin-left: 50px;
+    padding-top: 100px;
+}
+#insidebilde{
+    display: block;
+}
+
+.aktivshop{
+    text-decoration: underline;
+}
+.tilbakek{
+    
+    padding: 50px;
+    padding-left: 120px;
+}
+
+.sorteringer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 15px;
+}
+.sorteringer button{
+    border: none;
+    background-color: transparent;
+}
+.sorteringer h4{
+    font-size: 15px;
+}
+.sorteringer button:hover{
+    font-style: italic;
+    font-weight: bolder;
+}
+.produkter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.produkt{
+    padding: 10px 10px 10px 10px;
+}
+.produkt img{
+    width: 300px;
+}
+.handlekurv img{
+    width: 50px;
+}
+#bakgrunnstekst{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    right: 20%;
+    bottom: 30%;
+    text-align: center;
+}
+
+#bakgrunnstekst2{
+    color: white;
+    position: absolute;
+    font-size: 40px;
+    top: 190%;
+    left: 20%;
+    right: 20%;
+    bottom: 30%;
+    text-align: center;
+   
+}
+#bakgrunnstekst h1{
+    display: flex;
+    justify-content: center;
+}
+#bakgrunnsbilde{
+    width: 100%;
+}
+#forsidetekst{
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 20%;
+    right: 20%;
+    bottom: 50%;
+    text-align: center;
+}
+.aboutbilde img{
+    height: 700px;
+}
+.about{
+    padding-top: 60px;
+    padding-right: 200px;
+    padding-left: 137px;
+    font-style: normal;
+}
+.aboutw{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    padding-left: 10px;
+    padding-right: 140px;
+    padding-bottom: 170px;
+    font-size: 20px;
+}
+.aboutw p{
+    padding-top: 50px;
+}
+.aboutw img{
+    width: 500px;
+
+    padding-left: 80px;
+}
+.account{
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(175, 175, 175));
+    padding-top: 200px;
+    padding-left: 500px;
+    padding-bottom: 100px;
+    padding-right: 500px;
+}
+.accountboks{
+    background-color: white;
+    padding: 30px 50px 40px 50px;
+    border-radius: 5px;
+
+
+}
+.cart{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.bakgrunn img{
+    position: relative;
+    width: 100%;
+}
+.produktboks{
+    position: absolute;
+    color: white;
+    top: 28%;
+    left: 55%;
+    width: 500px;
+}
+.produktnavn{
+    font-size: 40px;
+    font-weight: 100;
+    position: absolute;
+    top: 0%;
+    left: 33%;
+}
+.cartknapp{
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    font-size: 15px;
+    font-weight: 100;
+    border-color: rgb(255, 254, 254);
+    border-width: 1px;
+    background-color: transparent;
+    padding: 14px 35px 14px 35px;
+    color: white;
+}
+#beskrivelse{
+    padding: 5px;
+    padding-top: 79px;
+    color: rgb(255, 255, 255);
+}
+
+.tilbake{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 190%;
+    
+}
+
+footer{
+    background-color:rgb(234, 233, 231);
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-bottom: 50px;
+    margin-top: 1px;
+}
+footer h1{
+    font-size: 20px;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+
+#logofoot{
+    width: 40px;
+    padding-bottom: 10px;
+}
+
+.produktgrid{
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+}
+
+.flekslinje{
+    display: flex;
+    
+    padding: 10px;
+}
+.flekslinje img{
+    width: 30px;
+
+}
+.find{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+#foteks{
+    margin-left: 10px;
+}

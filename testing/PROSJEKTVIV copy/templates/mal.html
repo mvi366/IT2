@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href='{{url_for("static", filename="nav.css")}}'>
+    <link rel="stylesheet" href='{{url_for("static", filename="style.css")}}'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Playfair+Display&family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="navtext" class='{{"aktiv" if request.path == "/shop" else ""}}' href="/shop">SHOP</a>
+            <a class="navtext" class='{{"aktiv" if request.path == "/about" else ""}}' href="/about">ABOUT</a>
+            <a class='{{"aktiv" if request.path == "/" else ""}}' id = "overskrift" href="/"> <img src='{{ url_for("static", filename="bilder/ViviLogo.png") }}' alt=''> </a>
+            <a class="navtext" class='{{"aktiv" if request.path == "/account" else ""}}' href="/account">ACCOUNT</a>
+            <a class="navtext" class='{{"aktiv" if request.path == "/cart" else ""}}' href="/handlekurv">BAG</a>
+        </nav>
+       
+    </header>
+
+    <main>
+        {% block main %}
+            
+        {% endblock %}
+    </main>
+    <footer>
+        <img id="logofoot" src="../static/bilder/footlo.png" alt="">
+        <div id="foteks">
+            <b>
+                CONTACT
+
+            </b>
+           
+        </div>
+        <div class="flekslinje">
+            <div>
+                <p>FIND US ON:</p>
+            </div>
+            <div class="find">
+                <a href="https://www.instagram.com/viviennewestwood/" target="_blank">
+                    <img class="medier" src='{{url_for("static", filename="youtube.webp")}}' alt="">
+                </a>
+            </div>
+            <div class="find">
+                <a href="https://nb-no.facebook.com/viviennewestwood/" target="_blank">
+                    <img class="medier" src='{{url_for("static", filename="face.png")}}' alt="">
+                </a>
+            </div>
+            <div class="find">
+                <a href="https://twitter.com/viviennewestwood" target="_blank">
+                    <img class="medier" src='{{url_for("static", filename="twitter.png")}}' alt="">
+                </a>
+
+            </div>
+            
+        </div>
+        <div>
+            <h1>© VIVIENNE WESTWOOD 2023</h1>
+        </div>
+    </footer>
+</body>
+</html>

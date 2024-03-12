@@ -1,0 +1,45 @@
+{% extends 'malh.html' %}
+
+{% block main %}
+
+  <div id="forside">
+    <img src='{{url_for("static", filename="blue.webp")}}'  alt="">
+
+  </div>
+  <div>
+    <h2 id="inside">INSIDE VIVIENNE WESTWOOD / <a href="/about">READ MORE ></a>
+    </h2>
+  </div>
+  
+  
+  <div class="bildeli">
+    <div>
+      <img src="../static/bilder/heritage.jpg" alt="">
+      <h3><b>WESTWOOD HERITAGE - ANIMAL TOE</b></h3>
+    </div>
+    <div>
+      <img src="../static/bilder/herit.jpg" alt="">
+      <h3><b>WESTWOOD HERITAGE - CORSETS</b></h3>
+    </div>
+    <div>
+      <img src="../static/bilder/jordan.webp" alt="">
+      <h3><b>JORDAN ROBSON</b></h3>
+    </div>
+    <div>
+      <img src="../static/bilder/tartan.webp" alt="">
+      <h3><b>WESTWOOD HERITAGE - TARTAN</b></h3>
+    </div>
+  </div>
+
+  <section id="insidebox">
+
+    <img id="insidebilde" src="../static/bilder/about.jpg" alt="">
+    
+    <div id="bakgrunnstekst2">
+        <h1 class="time">INSIDE VIVIENNE WESTWOOD</h1>
+        <a href="/about">DISCOVER MORE</a>
+    </div>
+  </section>
+
+
+{% endblock %}

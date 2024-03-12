@@ -1,0 +1,56 @@
+{
+    "bianca": { 
+        "navn": "BIANCA",
+        "pris": 3000,
+        "info": "2022",
+        "beskrivelse": "In homage to the iconic wedding suit worn by Bianca Jagger in the early 1970’s, this avant-garde look combines classic Savile Row tailoring with signature Westwood embellishments. The double-breasted wool jacket is embellished with crystal and pearl beading on the lapels, styled with a cropped corset decorated with broken pearls and finished with satin pearl-embossed trousers.  ",
+        "bilde": "bianca.jpg",
+        "produktbilde":  "bianca.jpg",
+        "type": ["view-all", "2022"]
+    },
+    "aud": {
+        "navn": "AUDREY",
+        "pris": 5050,
+        "info": "2022",
+        "beskrivelse": "The golden age of the silver screen is evoked in this ivory silk satin column dress, with a draped corset top and iconic Vivienne Westwood broken pearls cascading from the neckline – creating a modern classic with an asymmetrical twist. ",
+        "bilde": "audrey.webp",
+        "produktbilde": "audrey2.webp",
+        "type": ["view-all", "2022"]
+    },
+    "antoinette": {
+        "navn": "ANTOINETTE",
+        "pris": 5050,
+        "info": "2022",
+        "beskrivelse": "This traditional and regal silhouette adopts a contemporary look, exposing the corset and crinoline structure beneath, overlaid with delicate Chantilly lace and a tulle Watteau train, cascading from the back of the corset. The gown is styled with a scalloped lace edge tulle cape, fastened at the back with a pearl chain.",
+        "bilde": "antoinette.webp",
+        "produktbilde": "antoinette2.webp",
+        "type": ["view-all", "2022"]
+    },
+    "marieantoinette": {
+        "navn": "MARIE",
+        "pris": 6400,
+        "info": "2021",
+        "beskrivelse": "This traditional and regal silhouette adopts a contemporary look, exposing the corset and crinoline structure beneath, overlaid with delicate Chantilly lace and a tulle Watteau train, cascading from the back of the corset. The gown is styled with a scalloped lace edge tulle cape, fastened at the back with a pearl chain.",
+        "bilde": "marie.webp",
+        "produktbilde": "marie2.webp",
+        "type": ["view-all", "2021"]
+    },
+    "peace": {
+        "navn": "PEACE",
+        "pris": 6400,
+        "info": "2021",
+        "beskrivelse": "This traditional and regal silhouette adopts a contemporary look, exposing the corset and crinoline structure beneath, overlaid with delicate Chantilly lace and a tulle Watteau train, cascading from the back of the corset. The gown is styled with a scalloped lace edge tulle cape, fastened at the back with a pearl chain.",
+        "bilde": "peace.webp",
+        "produktbilde": "peace2.webp",
+        "type": ["view-all", "2021"]
+    },
+    "heming": {
+        "navn": "HEMINGWAY",
+        "pris": 5000,
+        "info": "2021",
+        "beskrivelse": "Taking the modern bride from day to night, the mini Hemingway Rose Dress is a transformational two-piece bridal look. The corseted mini dress, with intricate floral hand-embroidered embellishment, translucent mesh panels and exposed corsetry, is paired with a detachable voluminous cloud like floor length tulle train. ",
+        "bilde": "hemingway.webp",
+        "produktbilde": "hemingway.webp",
+        "type": ["view-all", "2021"]
+    }
+}

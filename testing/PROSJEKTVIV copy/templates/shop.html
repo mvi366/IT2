@@ -1,0 +1,48 @@
+{% extends 'malh.html' %}
+
+
+
+
+{% block main %}
+<main>
+
+    <img id="bakgrunnsbilde" src="../static/bilder/bridal.webp" alt="">
+    
+    <div id="bakgrunnstekst">
+        <h1 class="time">BRIDAL - COUTURE</h1>
+        <p>The Vivienne Westwood 2022 bridal couture collection takes inspiration from influential women from the arts and literature – from ancient Greece to modern-day heroines. Drawing on these muses, and sculpting a look for the modern Westwood bride, the collection is hand-crafted from a rich selection of both opulent and delicate fabrics and embellishments. </p>
+    </div>
+
+    <div class="sorteringer">
+        <h4>Sort by year</h4>
+        <form action="/shop/view-all">
+            <button class='{{"aktivshop" if request.path == "/shop/view-all" else ""}}' type="submit">VIEW ALL</button>
+        </form>
+        <form action="/shop/2022">
+            <button class='{{"aktivshop" if request.path == "/shop/2022" else ""}}' type="submit">2022</button>
+        </form>
+        <form action="/shop/2021">
+            <button class='{{"aktivshop" if request.path == "/shop/2021" else ""}}' type="submit">2021</button>
+        </form>
+       
+    </div>
+
+    <div class="produkter">
+        {% for id in produkter %}
+        <div class="produkt">
+            <a href="/produkt/{{ id }}">
+                <img src='{{ url_for("static", filename="bilder/" + produkter[id]["bilde"]) }}' alt='bilde av {{ produkter[id]["navn"] }}'> 
+                <h3>{{ produkter[id]["navn"] }}</h3>
+                <h4>{{ produkter[id]["info"] }}</h4>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="tilbakek">
+        <a href="/">BACK TO FRONT PAGE > </a>
+
+    </div>
+
+</main>
+
+{% endblock %}

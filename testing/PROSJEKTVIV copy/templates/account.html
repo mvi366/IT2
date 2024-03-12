@@ -1,0 +1,38 @@
+{% extends 'mal.html' %}
+
+{% block main %}
+
+    <div class="account">
+        <div class="accountboks">
+            <h1>CREATE ACCOUNT</h1>
+            <form action="/account" method="post"> 
+                <label for="brukernavn">Username:</label>
+                <input type="text" name="brukernavn">
+                <p></p>
+                <label for="passord">Password:</label>
+                <input type="text" name="passord">
+                <p></p>
+                <button type="submit">CREATE</button>
+        
+            </form>
+        
+            <div>
+                {% for id in account %}
+                    <div>
+                        {{ id["brukernavn"] }}
+                    </div>
+                    <div>
+                        <form action="/account/slett/{{id}}">
+                            <button type="submit">Delete account</button>
+                        </form>
+                    </div>
+                    
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="tilbakek">
+        <a href="/">BACK TO FRONT PAGE > </a>
+
+    </div>
+{% endblock %}

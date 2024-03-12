@@ -1,0 +1,35 @@
+{% extends 'malh.html' %}
+
+{% block main %}
+
+    <div class="produktgrid">
+        <div>
+            <img class="produktbilde" src='{{ url_for("static", filename="bilder/" + produkt["produktbilde"]) }}' alt=''>
+            
+        </div>
+        <div class="produktboks">
+            
+            <h1 class="produktnavn"><b>{{ produkt["navn"] }}</b></h1>
+            <h3 id="beskrivelse">{{ produkt["beskrivelse"] }}</h3>
+            <form action="/produkt/{{id}}/legg-til">
+                <button class="cartknapp" type="submit">ADD TO CART - $ {{ produkt["pris"] }}</button>
+            </form>
+            <a class="tilbake" href="/shop">back to shop</a>
+            
+            
+            
+        </div>
+
+    </div>
+    
+  
+
+   
+        
+
+    
+    
+    
+
+
+{% endblock %}

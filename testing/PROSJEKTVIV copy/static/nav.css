@@ -1,0 +1,36 @@
+nav{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 100px;
+    z-index: 2;
+}
+nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+.navtext{
+    padding-top: 40px;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+#overskrift{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    text-decoration: none;
+    padding-top: 28px;
+}
+#overskrift img{
+    width: 170px;
+}
+.aktiv{
+    text-decoration: underline;
+}
